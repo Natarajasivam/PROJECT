@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  border:2px solid #000000;
+  /* background: url(/IMAGE/big0.avif) no-repeat; */
+
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+}
+
+span {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+
+/* Navigation */
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  /* position: fixed; */
+  background-color: rgb(0, 0, 0);
+  box-shadow:2px 2px 10px rgba(0,0,0,0.25);
+}
+nav img{
+  width: 100px;
+  cursor: pointer;
+}
+
+.navigation ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.navigation ul li{
+  list-style: none;
+  margin-left: 50px;
+}
+.navigation ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+.navigation ul li a:hover{
+ color: #a601bb;
+transition:.5s ease;
+}
+
+
+
+
+
+/* courses */
+#courses {
+
+padding: 8vw 8vw 0 8vw;
+/* text-align: center; */
+}
+.course-box{
+    display: grid;
+    grid-template: repeat(3,auto)/repeat(3,auto);
+    gap: 4rem;
+    
+}
+.course
+{
+text-align: start; 
+padding: 10px;
+background:#F9F9FF;
+width: 400px;
+height: 500px;
+border: 2px solid lightgray;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.course img {
+width: 100%;
+height: 60%;
+object-fit: cover;
+background-position: center;
+background-size: cover;
+
+}
+.details{
+  padding: 10px 10px 0 10px;
+  color: lightslategray;
+  
+}
+.star{
+  color: gold;
+  font-size: 0.9rem;
+}
+.cost{
+  margin-top: 10px;
+  padding: 16px 13px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: gold;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#experts {
+
+  padding: 8vw 8vw 0 8vw; 
+  text-align: center;
+  
+  }
+  
+.expert-box{
+  
+  display: grid;
+  /* grid-template-columns: repeat (auto-fit, minmax(250px, 1fr));  */
+  grid-template: repeat(3,auto)/repeat(3,auto);
+  grid-gap: 1rem; 
+  margin-top: 50px;
+}
+.profile{
+  background: #e4e4e4;
+  padding: 30px 10px;
+}
+.pro-links{
+  margin-top: 10px;
+}
+.pro-links i{
+  padding: 10px 13px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.pro-links i:hover{
+  background:#000000;
+  color: #fff;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+
+/* footer  */
+footer{
+  padding: 8vw;
+  color: #ffffff;
+  background: #000000;
+  display: grid;
+  grid-template: repeat(3,auto)/repeat(3,auto);
+  grid-gap: 1rem; 
+  margin-top: 50px;
+  
+}
+.footer-col li ,p{
+padding: 10px;
+}
+
+#course-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 8vw;
+
+}
+#course-inner h3{
+  padding: 35px 0 25px 0;
+
+}
+#course-inner p{
+  color: rgb(85, 85, 85);
+}
+#course-inner hr{
+  height: 1px;
+  margin-top: 40px;
+  color: rgb(85, 85, 85);
+}
+.overview {
+  width: 100%;
+
+}
+.c-img{
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.course-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.c-name{
+  width: 70%;
+}
+.c-name p{
+  font-size: 16px;
+}
+
+
+
+.learn p{ 
+  padding-bottom: 15px;
+  font-size: 15px;
+  
+  }
+ 
+  
+  .learn  i{
+     color: #000000; 
+     font-weight: 700;
+    margin-right: 20px;
+  
+  }
+  .tutor{
+    display: flex;
+  }
+  .tutor .pos{
+    font-style: italic;
+  }
+  
+  .tutor img{
+  border-radius: 50%;
+  height: 70px;
+  margin-right: 20px;
+  width: 70px;
+  }
+  .pricetag{
+    margin-left: 500px;
+    width: 100px;
+    height: 50px;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+ .tutor h5 {
+  
+  font-size:15px;
+  
+  }
+ .enroll{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: rgb(225, 225, 225);
+  width: 400px;
+  height:500px;
+
+  border: 2px solid lightgray;
+ }
+ .buy-btn a{
+  width: 50%;
+  text-decoration: none;
+  background-color: gold;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+ }
+/* instructor page  */
+#instructorpg h1{
+  display: flex;
+  margin: 20px;
+
+}
+.instructor img{
+
+  margin-left: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.instructor img{
+  margin-bottom: 10px;
+}
+.review{
+width: 600px;
+height: 150px;
+border-radius: 50px;
+padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
